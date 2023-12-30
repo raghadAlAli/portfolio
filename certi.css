@@ -1,0 +1,128 @@
+* {
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  i {
+    color: inherit;
+  }
+  .bg-dark {
+    background-color: white !important;
+    outline: 5px solid rgb(201, 4, 135);
+  }
+  body {
+    background-color:rgb(61, 87, 156);
+  }
+  
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+    text-decoration: none;
+    color: black;
+    background-color:rgb(201, 4, 135);
+    transition-duration: 0.5s;
+    padding-left: 30px;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgb(201, 4, 135);
+  }
+  .dropdown-item {
+    color: white;
+  }
+  .dropdown-menu {
+    background-color: #343a40ea;
+  }
+  .navbar-dark .navbar-nav .nav-link:focus,
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(7, 7, 160);
+  }
+  .navbar-dark .navbar-brand {
+    color: rgb(201, 4, 135);
+    cursor: default;
+  }
+  .navbar-dark .navbar-brand:focus,
+  .navbar-dark .navbar-brand:hover {
+    color: rgb(7, 7, 160);
+  }
+  .navbar-dark .navbar-nav .active > .nav-link,
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link.show,
+  .navbar-dark .navbar-nav .show > .nav-link {
+    color: rgb(201, 4, 135);
+    cursor: default;
+  }
+  .intro {
+    font-size: 250%;
+    color: rgb(255, 255, 255);
+    font-family: "Ink Free";
+    padding: 30px 15%;
+  }
+  .jumbotron {
+    background-image: url(my-images/coph.jpg);
+    background-size: cover;
+    width: 100%;
+    outline: 5px solid  rgb(201, 4, 135);
+  }
+  .os {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    color: rgb(33, 209, 71);
+    font-size: 350%;
+    text-align: center;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+    margin-bottom: 30px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner,
+  .flip-card:active .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .flip-card-front {
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #f5f5f5;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+  }
+  .flip-card-back p,
+  h1 {
+    padding: 6%;
+    color: black;
+  }
+  .flip-card-back h1,
+  a {
+    color: green;
+  }
+  
